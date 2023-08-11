@@ -1,0 +1,57 @@
+{
+    "name": "mehedi-iitdu/core-component-repository",
+    "description": "My awesome package",
+    "keywords": [
+        "mehedi-iitdu",
+        "core-component-repository"
+    ],
+    "homepage": "https://github.com/mehedi-iitdu/core-component-repository",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Mehedi Hasan",
+            "email": "bsse0607@iit.du.ac.bd",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "illuminate/support": "*"
+    },
+    "require-dev":{
+        "phpunit/phpunit" : "*",
+        "scrutinizer/ocular": "~1.1",
+        "satooshi/php-coveralls": "^0.7.0",
+        "mockery/mockery": ">=0.7.2",
+        "phpspec/phpspec": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MehediIitdu\\CoreComponentRepository\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MehediIitdu\\CoreComponentRepository\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MehediIitdu\\CoreComponentRepository\\CoreComponentRepositoryServiceProvider"
+            ],
+            "aliases": {
+                "CoreComponentRepository": "MehediIitdu\\CoreComponentRepository\\CoreComponentRepositoryFacade"
+            }
+        }
+    }
+}

@@ -1,0 +1,254 @@
+/*your custom css goes here*/
+.col-lg-9, .cat-image {
+    visibility: collapse;
+  }
+  .home-banner-area{
+    visibility: collapse;
+  }
+  .category-nav-element:focus {
+    outline: 0;
+    border-color: #2260ff;
+    box-shadow: 0 0 0 4px #b5c9fc;
+  }
+  
+  .input-group {
+    background-color: #f5f5f5;
+    color: #242424;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    line-height: 1.15;
+    box-shadow: 0px 10px 20px -18px;
+  }
+  
+  .input-group:hover {
+    outline: 1px solid lightgrey;
+  }
+  
+  .input-group:focus {
+    border-bottom: 2px solid #5b5fc7;
+    border-radius: 4px 4px 2px 2px;
+  
+  
+  }
+  
+  /* Login icon  */
+  .text-resett {
+    margin-right: 3px;
+    margin-top: -4px;
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .text-resett svg {
+    margin-right: 3px;
+    margin-top: -4px;
+    height: 35px;
+    width: 17px;
+  }
+  
+  .text-resett svg path {
+    fill: var(--night-rider);
+  }
+  
+  .text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: var(--night-rider);
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: .3s;
+  }
+  
+  .Btn:hover {
+    width: 125px;
+    border-radius: 5px;
+    transition-duration: .3s;
+  }
+  
+  .Btn:hover .sign {
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 20px;
+  }
+  
+  .Btn:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px;
+  }
+  
+  .Btn:active {
+    transform: translate(2px, 2px);
+  } 
+  
+  .fs-15 {
+    letter-spacing: 2px;
+  }
+  
+  /* Sub-Category  */
+
+  .fw-600{
+    color: rgb(158, 150, 150);
+  }
+  .list-group-item {
+    font-size: 15px;
+    background: transparent;
+    border: none;
+    padding: 1em 1.5em;
+    color: #24374e;
+    text-transform: uppercase;
+    position: relative;
+    transition: .2s ease;
+  }
+  
+  .list-group-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #1b5fcc;
+    transition: .1s ;
+  }
+  
+  .list-group-item:hover {
+    color: #1a67e1bf;
+    transition-delay: .1s;
+  }
+  
+  .list-group-item:hover::before {
+    width: 100%;
+  }
+  
+  .list-group-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #0697ff;
+    transition: .2s ease;
+    z-index: -1;
+  }
+  
+  .list-group-item:hover::after {
+    height: 100%;
+    transition-delay: 0.2s;
+    color: aliceblue;
+  }
+  
+  .speech-recognisation{
+    height: 50px;
+    width: 50px;
+  }
+  .text-resett{
+    text-decoration: none;
+    color: #4b9ea3;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-top: 0.2em;
+    /* justify-content: center; */
+}
+.text-resett svg{
+  height: 35px;
+  width: 35px;
+
+  
+
+}
+.text-resettt{
+  text-decoration: none;
+  color: #4b9ea3;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+
+}
+.text-resettt svg{
+  height: 20px;
+  width: 20px;
+  
+
+}
+  
+.mic{
+  height: 36px;
+  width: 28px;
+  padding: 2.5px;
+}
+.h2{
+  font-family:-webkit-body;
+  
+
+}
+.h4{
+  font-family: -webkit-body;
+}
+
+
+del{
+  font-family: -webkit-body;
+
+}
+.voice-assistant{
+    background-color: #E62E04;
+    border-color: transparent;
+    border-radius: 10px;
+    margin-left: 2px;
+ 
+}
+
+
+.mic-mobile{
+  margin-top: -72px;
+  margin-left: 38px;
+  
+}
+.voice-assistant-mobile{
+  border-color: transparent;
+  background-color: transparent;
+}
+.mic:hover{
+  position: relative;
+  animation: microphone-animation 1.5s infinite;
+}
+
+@keyframes microphone-animation {
+  0% {
+    transform: scale(0.75);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.75);
+  }
+}
+
+.cat-name:hover {
+padding: 6px;
+background-color: white;
+border-radius: 7px;
+}
+
+.bg-white {
+  background-color: #8080800f;
+}
+
+.container{
+  background-color: #8080800f;
+
+
+}

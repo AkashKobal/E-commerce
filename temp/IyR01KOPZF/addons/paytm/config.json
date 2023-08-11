@@ -1,0 +1,29 @@
+{
+   "name":"Paytm",
+   "unique_identifier":"paytm",
+   "version":"1.1",
+   "minimum_item_version":"3.6",
+   "addon_banner":"paytm.png",
+   "directory":[
+      {
+         "name":[
+            "resources/views/paytm"
+         ]
+      }
+   ],
+   "sql_file":"",
+   "files":[
+      {
+          "root_directory":"addons/paytm/views/paytm/index.blade.php",
+          "update_directory":"resources/views/paytm/index.blade.php"
+      },
+      {
+          "root_directory":"addons/paytm/controllers/PaytmController.php",
+          "update_directory":"app/Http/Controllers/PaytmController.php"
+      },
+      {
+         "root_directory":"addons/paytm/assets/paytm.png",
+         "update_directory":"public/paytm.png"
+      }
+   ]
+}

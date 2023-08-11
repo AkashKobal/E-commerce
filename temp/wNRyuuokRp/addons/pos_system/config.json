@@ -1,0 +1,76 @@
+{
+    "name" : "Point of Sale",
+
+    "unique_identifier" : "pos_system",
+
+    "version" : "1.6",
+
+    "minimum_item_version" : "5.5",
+
+    "addon_banner" : "pos_banner.png",
+
+    "directory" :
+    [
+        {
+          "name" : ["resources/views/pos", "resources/views/pos/frontend", "resources/views/pos/frontend/seller", "resources/views/pos/frontend/seller/pos"]
+        }
+    ],
+
+    "sql_file"  : "",
+
+    "files"     :
+    [
+        {
+            "root_directory"    : "addons/pos_system/views/pos/cart.blade.php",
+            "update_directory"  : "resources/views/pos/cart.blade.php"
+        },
+        {
+            "root_directory"    : "addons/pos_system/views/pos/guest_shipping_address.blade.php",
+            "update_directory"  : "resources/views/pos/guest_shipping_address.blade.php"
+        },
+        {
+            "root_directory"    : "addons/pos_system/views/pos/index.blade.php",
+            "update_directory"  : "resources/views/pos/index.blade.php"
+        },
+        {
+            "root_directory"    : "addons/pos_system/views/pos/pos_activation.blade.php",
+            "update_directory"  : "resources/views/pos/pos_activation.blade.php"
+        },
+        {
+            "root_directory"    : "addons/pos_system/views/pos/shipping_address.blade.php",
+            "update_directory"  : "resources/views/pos/shipping_address.blade.php"
+        },
+        {
+            "root_directory"    : "addons/pos_system/views/pos/variants.blade.php",
+            "update_directory"  : "resources/views/pos/variants.blade.php"
+        },
+        {
+            "root_directory"    : "addons/pos_system/views/pos/order_summary.blade.php",
+            "update_directory"  : "resources/views/pos/order_summary.blade.php"
+        },
+        {
+            "root_directory"    : "addons/pos_system/views/pos/frontend/seller/pos/guest_shipping_address.blade.php",
+            "update_directory"  : "resources/views/pos/frontend/seller/pos/guest_shipping_address.blade.php"
+        },
+        {
+            "root_directory"    : "addons/pos_system/views/pos/frontend/seller/pos/index.blade.php",
+            "update_directory"  : "resources/views/pos/frontend/seller/pos/index.blade.php"
+        },
+        {
+            "root_directory"    : "addons/pos_system/views/pos/frontend/seller/pos/shipping_address.blade.php",
+            "update_directory"  : "resources/views/pos/frontend/seller/pos/shipping_address.blade.php"
+        },
+        {
+            "root_directory"    : "addons/pos_system/controllers/PosController.php",
+            "update_directory"  : "app/Http/Controllers/PosController.php"
+        },
+        {
+            "root_directory"    : "addons/pos_system/routes/pos.php",
+            "update_directory"  : "routes/pos.php"
+        },
+        {
+            "root_directory"    : "addons/pos_system/assets/pos_banner.png",
+            "update_directory"  : "public/pos_banner.png"
+        }
+    ]
+}
